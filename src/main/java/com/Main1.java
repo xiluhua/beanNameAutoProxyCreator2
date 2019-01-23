@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.service.UserService;
 
 
-public class Main {
+public class Main1 {
 	
 	@SuppressWarnings("resource")
 	public static void main(String[] args){

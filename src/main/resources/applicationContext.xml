@@ -9,4 +9,13 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
 	<context:component-scan base-package="com"></context:component-scan>
+	
+	<!-- 
+		指定使用 CGLIB 生成代理对象  
+		BeanNameAutoProxyCreator 不支持，内部采用 JDK 创建代理对象
+		所以，此 demo 没法用上
+	-->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<aop:config proxy-target-class="true" />
+	
 </beans>
